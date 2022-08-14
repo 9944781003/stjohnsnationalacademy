@@ -1,0 +1,14 @@
+<?php
+
+$to      = 'arul@touchskytechnologies.com';
+//$to      = 'mailtoarull@gmail.com';
+$subject = 'Comment From Website';
+$message = 'Message From '.$_POST["name"].' And the Message he sent is  : '.$_POST['message'].'';
+$headers = 'From: paul@touchskytechnologies.com' . "\r\n" .
+    'Reply-To:'.$_POST["email"].'' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($to, $subject, $message, $headers);
+header('Location: contact.html');
+
+?>
