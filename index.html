@@ -21,29 +21,7 @@ best school in salem tamilnadu,">
 
 <body>
 	<!-- Header -->
-	<div class="top_message">
-		<div class="container">
-			<div class="col-md-12">
-				<div class="col-md-5 mar">
-					<marquee direction="Left" scrollamount="4" style="width: 100%;" onmouseover="this.scrollAmount=2"
-						onmouseout="this.scrollAmount=4">
-						<strong style="">Affiliated to the central board of education, Delhi.
-							Aff.No : 1930709</strong>
-					</marquee>
-				</div>
-				<div class="col-md-4">
-				</div>
-				<div class="col-md-3" id="social_icon">
-					<a href="https://www.facebook.com/salemstjohnscbse"><img src="./img/template/Facebook-icon.png"
-							width="32" height="32" border="0" alt="Facebook"></a>
-					<img src="./img/template/g.png" width="32" height="32" border="0" alt="Google Plus">
-					<img src="./img/template/Twitter-icon.png" width="32" height="32" border="0" alt="Twitter">
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Site header and navigation -->
-	<div class="container-fluid" style="background-color: #541e1c">
+	<div class="top">
 		<div class="container">
 			<nav class="navbar" role="navigation">
 				<div class="navbar-header">
@@ -52,6 +30,7 @@ best school in salem tamilnadu,">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="glyphicon glyphicon-th-large"></span> &nbsp;MENU
 					</button>
+					<!-- <a class="navbar-brand" href="#">St. Johns's National Academy (CBSE)</a>  -->
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav" style="padding-top:14px;">
@@ -89,11 +68,12 @@ best school in salem tamilnadu,">
 			</nav>
 		</div>
 	</div>
+
 	<!-- Site banner -->
 	<div class="banner">
 		<div class="container">
 			<div class="col-md-12">
-				<div class="col-md-8 hidden-xs hidden-sm slider" data-ride="carousel">
+				<div class="col-md-8 hidden-xs hidden-sm slider" style="z-index:1">
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
@@ -332,7 +312,7 @@ best school in salem tamilnadu,">
 				</div>
 				<div class="modal-body mx-3">
 					</br>
-					<form method="POST" action="http://www.stjohnsnationalacademy.com/sendApplication.php">
+					<form>
 						<div class="form-group">
 							<label for="name">Student Name:</label>
 							<input name="name" type="text" class="form-control" id="name" required>
